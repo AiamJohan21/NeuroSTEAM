@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuroSTEAM</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="loginContainer">
+    <div class="logo-container">
+      <img src="logo+name (1).svg" alt="Profesora" class="profesora-image" />
+    </div>
+    <form id="loginForm" onsubmit="return false;">
+      <label for="username">Usuario</label>
+      <input type="text" id="username" placeholder="Ingresa tu usuario" />
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" placeholder="Ingresa tu contraseña" />
+      <button id="loginBtn">Iniciar Sesión</button>
+    </form>
+  </div>
+  <div id="mainContainer">
+    <header class="header-bar">
+      <div class="header-left">
+        <span class="header-url">https://www.neurosteam.com</span>
+      </div>
+      <div class="header-right">
+        <button id="btnHijos" class="header-btn">Hitos 1ra Infancia</button>
+        <button id="btnSoporte" class="header-btn">Soporte</button>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <button id="btnMisActividades" class="sidebar-btn">
+          <img src="mis actividades boton.svg" alt="btnMisActividades" class="btn-image" />
+        <button id="btnFavoritos" class="sidebar-btn">
+          <img src="favortios.svg" alt="Favoritos" class="btn-image" />
+        </button>
+        <button id="btnActividadesEditadas" class="sidebar-btn">Actividades Editadas</button>
+      </nav>
+      <main class="main-content">
+        <section class="megaphone-message">
+          <h3>¡El momento es hoy!</h3>
+          <p>Crea tu actividad. Tus Estudiantes aprenden usando habilidades STEAM</p>
+        </section>
+        <section id="infoHitos" class="info-hitos" style="display: none;">
+          <h2>Hitos de la Primera Infancia</h2>
+          <img src="hitos.png" alt="Hitos de la Primera Infancia" />
+        </section>
+        <section class="chat-section">
+          <input type="text" id="chatInput" placeholder="Comencemos..." class="chat-input" />
+          <button id="chatSubmitBtn" class="chat-submit-btn">Enviar</button>
+          <div id="chatResponse" class="chat-response"></div>
+        </section>
+        <section class="categories-section">
+          <button class="category-btn">Actividades Recientes</button>
+          <button class="category-btn">Habilidad Motora</button>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
